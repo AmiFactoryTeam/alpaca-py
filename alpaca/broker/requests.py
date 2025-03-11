@@ -1111,7 +1111,7 @@ class CreateRunRequest(NonEmptyRequest):
 
     account_id: UUID
     type: RunType
-    weights: List[Weight]
+    weights: Optional[List[Weight]] = None
 
 
 class GetRunsRequest(NonEmptyRequest):
