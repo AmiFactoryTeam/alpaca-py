@@ -67,7 +67,7 @@ class RebalancingRun(BaseModel):
     type: RunType
     amount: Optional[str] = None
     portfolio_id: UUID
-    weights: Optiona[List[Weight]] = None
+    weights: Optional[List[Weight]] = None
     initiated_from: Optional[RunInitiatedFrom] = None
     created_at: datetime
     updated_at: datetime
