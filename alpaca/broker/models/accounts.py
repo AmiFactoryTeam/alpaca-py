@@ -333,6 +333,7 @@ class TradeAccount(BaseTradeAccount):
         clearing_broker (Optional[ClearingBroker]): The Clearing broker for this account
     """
 
+    position_market_value: Optional[str]
     cash_withdrawable: Optional[str]
     cash_transferable: Optional[str]
     previous_close: Optional[datetime]
